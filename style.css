@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: 'Dancing Script', cursive;
+    /* overflow: hidden; */
+    background-image: url("music_images/musicback.webp");
+}
+
+h1{
+    font-size: 70px;
+    margin-top: 50px;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    text-shadow: 3px 1px #a4a4a3;
+}
+.instruments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-top: 210px;
+}
+button{
+    width: 150px;
+    height: 150px;
+    background-color: #eaeaea;
+    padding: 8px;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+border: 12px solid gray;
+border-radius: 12px;
+background-size: contain;
+background-repeat: no-repeat;
+text-shadow: 1px 1px #a4a4a3;
+}
+button:hover{
+    cursor: pointer;
+    border-color: #a4a4a3;
+}
+
+.w{
+background-image: url("music_images/do.png");
+
+}
+.a{
+background-image: url("music_images/re.png");
+}
+.s{
+background-image: url("music_images/mi2.png");
+}
+.d{
+background-image: url("music_images/fa.png");
+}
+.j{
+background-image: url("music_images/so.webp");
+}
+.k{
+background-image: url("music_images/la.png");
+}
+.l{
+background-image: url("music_images/ti2.png");
+}
+
+@media screen and (max-width:1870px) {
+    body{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+@media screen and (max-width:1690px) {
+    body{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width:1460px) {
+    .instruments{
+        flex-wrap: wrap;
+        align-items: normal;
+        justify-content: normal;
+        gap: 12px;
+    }
+    body{
+        margin-left: 100px;
+        margin-right: 84px;
+       }
+}
+
+@media screen and (max-width:580px){
+   body{
+    margin-left: 40px;
+    margin-right: 0px;
+   }
+   h1{
+    font-size: 60px;
+   }
+}
+
+@media screen and (max-width:380px) {
+    h1{
+        font-size: 50px;
+    }
+    body{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:290px) {
+    h1{
+        font-size: 30px;
+    }
+    .instruments{
+        margin-left: 30px;
+    }
+}
